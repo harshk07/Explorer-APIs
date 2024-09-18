@@ -36,7 +36,7 @@ class BlockRequestTimestamp(BaseModel):
     timestamp: datetime
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "rpcUrl": "http://127.0.0.1:22000",
                 "timestamp": "2024-09-03T12:30:00"
